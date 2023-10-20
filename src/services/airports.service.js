@@ -6,7 +6,8 @@ class AirportsService {
     constructor(airports){
         this._airports = airports;
     }
-
+//updated the sorting
+//trying to link the sorting id
     getAll(){
         return this._airports.filter(a => a.code).map(avoidEmptyCity).sort((a, b) => (a.city > b.city) ? 1 : -1);
     }
